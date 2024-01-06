@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 4.44 s <<< FAILURE! - in TestSuite
+api_tests.PetStoreTests.createApet_with_json_file  Time elapsed: 0.019 s  <<< FAILURE!
+java.io.FileNotFoundException: .\src\test\resources\json_files\createApet.json (The system cannot find the path specified)
+	at api_tests.PetStoreTests.createApet_with_json_file(PetStoreTests.java:288)
+
+api_tests.PetStoreTests.deleteThePet  Time elapsed: 0.076 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [404]
+	at api_tests.PetStoreTests.deleteThePet(PetStoreTests.java:240)
+
+api_tests.PetStoreTests.findaPetById  Time elapsed: 0.075 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [404]
+	at api_tests.PetStoreTests.findaPetById(PetStoreTests.java:192)
+
+api_tests.PetStoreTests.findaPetById_chainValidation  Time elapsed: 0.091 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at api_tests.PetStoreTests.findaPetById_chainValidation(PetStoreTests.java:215)
+

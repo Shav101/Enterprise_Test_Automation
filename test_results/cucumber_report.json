@@ -1,0 +1,145 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-09T00:44:37.132Z",
+        "line": 5,
+        "name": "As a User, I am able to select different departments and search",
+        "description": "",
+        "id": "amazon-departments;as-a-user--i-am-able-to-select-different-departments-and-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8329967700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the amazon homepage",
+            "match": {
+              "location": "step_definitions.AmazonTests_steps.i_am_on_the_amazon_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#searchDropdownBox\"}\n  (Session info: headless chrome\u003d112.0.5615.138)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-UHB9FFT\u0027, ip: \u0027192.168.1.191\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\\Users\\sj192\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51672}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 14063f22f400a3bbba1119eb36db7db4\n*** Element info: {Using\u003did, value\u003dsearchDropdownBox}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy17.getTagName(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.Select.\u003cinit\u003e(Select.java:45)\r\n\tat step_definitions.AmazonTests_steps.the_departments_dropdown_is(AmazonTests_steps.java:32)\r\n\tat ✽.The departments dropdown is \"All Departments\"(file:///C:/Users/sj192/PrimeTechJavaClass/Enterprise_Test_Automation/./src/test/resources/features/AmazonTests.feature:7)\r\n",
+              "duration": 2039117700,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "The departments dropdown is \"All Departments\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"All Departments\"",
+                  "offset": 28
+                }
+              ],
+              "location": "step_definitions.AmazonTests_steps.the_departments_dropdown_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I select the department \"Home \u0026 Kitchen\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Home \u0026 Kitchen\"",
+                  "offset": 24
+                }
+              ],
+              "location": "step_definitions.AmazonTests_steps.i_select_the_department(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 500000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I search \"Coffee mug\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Coffee mug\"",
+                  "offset": 9
+                }
+              ],
+              "location": "step_definitions.AmazonTests_steps.i_search(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 500100,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I should be on \"Coffee mug\" search result page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Coffee mug\"",
+                  "offset": 15
+                }
+              ],
+              "location": "step_definitions.AmazonTests_steps.i_should_be_on_search_result_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "The departments dropdown is \"Home \u0026 Kitchen\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Home \u0026 Kitchen\"",
+                  "offset": 28
+                }
+              ],
+              "location": "step_definitions.AmazonTests_steps.the_departments_dropdown_is(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@amazonTestDemo"
+          },
+          {
+            "name": "@smoketest"
+          }
+        ]
+      }
+    ],
+    "name": "Amazon departments",
+    "description": "",
+    "id": "amazon-departments",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AmazonTests.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

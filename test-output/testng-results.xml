@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="9" total="11" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-26T11:17:16 EDT" name="Default suite" finished-at="2023-09-26T11:17:20 EDT" duration-ms="4437">
+    <groups>
+    </groups>
+    <test started-at="2023-09-26T11:17:16 EDT" name="Default test" finished-at="2023-09-26T11:17:20 EDT" duration-ms="4437">
+      <class name="api_tests.PetStoreTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api_tests.PetStoreTests@2805d709]" started-at="2023-09-26T11:17:16 EDT" name="setup" finished-at="2023-09-26T11:17:17 EDT" duration-ms="919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createApet_Post()[pri:0, instance:api_tests.PetStoreTests@2805d709]" started-at="2023-09-26T11:17:17 EDT" name="createApet_Post" finished-at="2023-09-26T11:17:20 EDT" duration-ms="3114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createApet_Post -->
+        <test-method signature="findaPetById_chainValidation()[pri:0, instance:api_tests.PetStoreTests@2805d709]" started-at="2023-09-26T11:17:20 EDT" name="findaPetById_chainValidation" finished-at="2023-09-26T11:17:20 EDT" depends-on-methods="api_tests.PetStoreTests.createApet_Post" duration-ms="357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findaPetById_chainValidation -->
+      </class> <!-- api_tests.PetStoreTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
